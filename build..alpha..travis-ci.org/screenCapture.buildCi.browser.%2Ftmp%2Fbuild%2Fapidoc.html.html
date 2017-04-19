@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/onehealth/grunt-open"
-
-    >grunt-open (v0.2.3)</a>
+    <a href="https://github.com/onehealth/grunt-open">grunt-open (v0.2.3)</a>
 </h1>
 <h4>Open urls and files from a grunt task</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.grunt-open">module grunt-open</a><ol>
 
@@ -91,61 +84,61 @@
   grunt.initConfig({
     jshint: {
       options : {
-        jshintrc : &#x27;.jshintrc&#x27;
+        jshintrc : '.jshintrc'
       },
-      all: [&#x27;Gruntfile.js&#x27;, &#x27;tasks/**/*.js&#x27;, &#x27;test/**/*.js&#x27;]
+      all: ['Gruntfile.js', 'tasks/**/*.js', 'test/**/*.js']
     },
     open : {
       dev : {
-        path : &#x27;http://mozilla.com/&#x27;,
-        app : &#x27;firefox&#x27;
+        path : 'http://mozilla.com/',
+        app : 'firefox'
       },
       google : {
-        url : &#x27;http://google.com/&#x27;,
-        app : &#x27;Google Chrome&#x27;
+        url : 'http://google.com/',
+        app : 'Google Chrome'
       },
       default_app : {
-        url : &#x27;http://example.com/&#x27;,
+        url : 'http://example.com/',
         options : {
           delay : 100
         }
       },
       file : {
-        file : &#x27;/etc/hosts&#x27;
+        file : '/etc/hosts'
       },
       onOpen: {
-        file: &#x27;./LICENSE&#x27;,
+        file: './LICENSE',
         options: {
-          openOn: &#x27;openOnTrigger&#x27;
+          openOn: 'openOnTrigger'
         }
       },
       neverTrigger: {
-        file: path.join(__dirname, &#x27;.jshintrc&#x27;),
+        file: path.join(__dirname, '.jshintrc'),
         options: {
-          openOn: &#x27;nevertriggered&#x27;
+          openOn: 'nevertriggered'
         }
       }
     }
   });
 
-  grunt.registerTask(&#x27;mockOnTrigger&#x27;, function () {
+  grunt.registerTask('mockOnTrigger', function () {
     var done = this.async();
     setTimeout(function () {
-      grunt.event.emit(&#x27;openOnTrigger&#x27;);
+      grunt.event.emit('openOnTrigger');
       done();
     }, 100);
   });
 
-  grunt.loadNpmTasks(&#x27;grunt-contrib-jshint&#x27;);
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Load local tasks.
-  grunt.loadTasks(&#x27;tasks&#x27;);
+  grunt.loadTasks('tasks');
 
   // Default task.
-  grunt.registerTask(&#x27;default&#x27;, [&#x27;jshint&#x27;, &#x27;test&#x27;]);
+  grunt.registerTask('default', ['jshint', 'test']);
 
   // test
-  grunt.registerTask(&#x27;test&#x27;, [&#x27;open&#x27;, &#x27;mockOnTrigger&#x27;]);
+  grunt.registerTask('test', ['open', 'mockOnTrigger']);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -159,3 +152,4 @@
     ]
 </div>
 </div>
+</body></html>

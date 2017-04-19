@@ -61,12 +61,95 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.grunt-open">module grunt-open</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-open.grunt-open">
+            function <span class="apidocSignatureSpan"></span>grunt-open
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.grunt-open" id="apidoc.module.grunt-open">module grunt-open</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-open.grunt-open" id="apidoc.element.grunt-open.grunt-open">
+        function <span class="apidocSignatureSpan"></span>grunt-open
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">grunt-open = function (grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    jshint: {
+      options : {
+        jshintrc : &#x27;.jshintrc&#x27;
+      },
+      all: [&#x27;Gruntfile.js&#x27;, &#x27;tasks/**/*.js&#x27;, &#x27;test/**/*.js&#x27;]
+    },
+    open : {
+      dev : {
+        path : &#x27;http://mozilla.com/&#x27;,
+        app : &#x27;firefox&#x27;
+      },
+      google : {
+        url : &#x27;http://google.com/&#x27;,
+        app : &#x27;Google Chrome&#x27;
+      },
+      default_app : {
+        url : &#x27;http://example.com/&#x27;,
+        options : {
+          delay : 100
+        }
+      },
+      file : {
+        file : &#x27;/etc/hosts&#x27;
+      },
+      onOpen: {
+        file: &#x27;./LICENSE&#x27;,
+        options: {
+          openOn: &#x27;openOnTrigger&#x27;
+        }
+      },
+      neverTrigger: {
+        file: path.join(__dirname, &#x27;.jshintrc&#x27;),
+        options: {
+          openOn: &#x27;nevertriggered&#x27;
+        }
+      }
+    }
+  });
+
+  grunt.registerTask(&#x27;mockOnTrigger&#x27;, function () {
+    var done = this.async();
+    setTimeout(function () {
+      grunt.event.emit(&#x27;openOnTrigger&#x27;);
+      done();
+    }, 100);
+  });
+
+  grunt.loadNpmTasks(&#x27;grunt-contrib-jshint&#x27;);
+
+  // Load local tasks.
+  grunt.loadTasks(&#x27;tasks&#x27;);
+
+  // Default task.
+  grunt.registerTask(&#x27;default&#x27;, [&#x27;jshint&#x27;, &#x27;test&#x27;]);
+
+  // test
+  grunt.registerTask(&#x27;test&#x27;, [&#x27;open&#x27;, &#x27;mockOnTrigger&#x27;]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 

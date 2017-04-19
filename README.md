@@ -1,9 +1,14 @@
-# api documentation for  [grunt-open (v0.2.3)](https://github.com/onehealth/grunt-open)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-open.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-open) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-open.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-open)
+# npmdoc-grunt-open
+
+#### api documentation for  [grunt-open (v0.2.3)](https://github.com/onehealth/grunt-open)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-open.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-open) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-open.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-open)
+
 #### Open urls and files from a grunt task
 
-[![NPM](https://nodei.co/npm/grunt-open.png?downloads=true)](https://www.npmjs.com/package/grunt-open)
+[![NPM](https://nodei.co/npm/grunt-open.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-open)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-open/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-grunt-open_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-open/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-grunt-open/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-grunt-open/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-open/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-open/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-grunt-open/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Jarrod Overson",
-        "email": "jsoverson@gmail.com",
         "url": "http://jarrodoverson.com/"
     },
     "bin": {
@@ -59,13 +63,11 @@
     "main": "Gruntfile.js",
     "maintainers": [
         {
-            "name": "jsoverson",
-            "email": "jsoverson@gmail.com"
+            "name": "jsoverson"
         }
     ],
     "name": "grunt-open",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/onehealth/grunt-open.git"
@@ -76,16 +78,6 @@
     "version": "0.2.3"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module grunt-open](#apidoc.module.grunt-open)
-
-
-
-# <a name="apidoc.module.grunt-open"></a>[module grunt-open](#apidoc.module.grunt-open)
 
 
 
